@@ -1,0 +1,104 @@
+#buttonId{
+    height: 40px;
+    width: 200px;
+    background-color: blueviolet;
+    text-align: center;
+    border-radius: 10px;
+
+}
+#buttonId:hover{
+    background-color: aquamarine;
+}
+
+#widthBox{
+    width: 100px;
+    height: 120px;
+    transition: width 2s;
+    background-color: blue;
+}
+
+#widthBox:hover{
+    width: 300px;
+}
+
+#forCircle{
+    background-color: brown;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.float{
+    background-color: pink;
+    display: block;
+    float: left;
+    margin: 12px;
+    font-size: 30px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+@media screen and  (max-width:300px){
+    .float{
+        float: right;
+        background-color: aqua;
+        border-radius: 50%;
+    }
+    #hrID{
+        clear: right;
+    }
+}
+
+@media screen and  (min-width:301px) {
+#hrID{
+    clear:left
+}
+
+}
+
+.animationExample{
+    background-color: rgb(130, 80, 176);
+    height:200px;
+    width:200px;
+    animation-name: box-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+   
+@keyframes box-animation{
+    0%
+    {
+        background-color: rgb(230, 105, 227);
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+
+    25%{
+        background-color: rgb(5, 17, 17);
+        position: relative;
+        top: 0;
+        left: 600px;
+        border-radius: 50%;
+    }
+    50%{
+        background-color: rgb(0, 255, 47);
+        position: relative;
+        top: 400px;
+        left: 600px;
+    }
+    75%{
+        background-color: rgb(162, 51, 190);
+        position: relative;
+        top: 400px;
+        left: 0;
+    }
+    100%{
+        background-color: rgb(255, 221, 0);
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+}
